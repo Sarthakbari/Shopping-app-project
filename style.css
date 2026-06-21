@@ -699,6 +699,277 @@ footer a:hover {
     z-index: -9;
 }
 
+/* About page */
+
+#page-header.about-header {
+    background-image: url("img/about/banner.png");
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Contact page */
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .con-details {
+    width: 40%;
+}
+
+#contact-details .con-details span,
+#form-details form span {
+    font-size: 12px;
+}
+
+#contact-details .con-details h2,
+#form-details form h2 {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .con-details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+#contact-details .con-details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .con-details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .con-details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 2px solid #e1e1e1;
+}
+
+#form-details form .normal {
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .my-self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#form-details .my-self img {
+    align-items: center;
+    border-radius: 115px;
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+}
+
+#form-details .my-self h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#form-details .my-self p a {
+    text-decoration: none;
+    color: #4589e7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-details .my-self p a:hover {
+    color: #bc0000;
+}
+
+/* Cart page */
+#cart{
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px; 
+}
+
+#cart table thead{
+    border: 2px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 2px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 2px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 2px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
 /* Media Query */
 @media (max-width: 799px) {
     .section-p1 {
@@ -795,6 +1066,15 @@ footer a:hover {
     #newsletter .form {
         width: 70%;
     }
+
+    /* Contact page */
+    #form-details {
+        padding: 35px;
+    }
+
+    #form-details form {
+        width: 50%;
+    }
 }
 
 @media (max-width: 477px) {
@@ -883,7 +1163,7 @@ footer a:hover {
 
     /* Blog page */
 
-    #blog{
+    #blog {
         padding: 100px 20px 0 20px;
     }
 
@@ -893,13 +1173,73 @@ footer a:hover {
         align-items: flex-start;
     }
 
-    #blog .blog-img{
+    #blog .blog-img {
         width: 100%;
         margin-right: 0;
         margin-bottom: 30px;
     }
 
-    #blog .blog-details{
+    #blog .blog-details {
         width: 100%;
+    }
+
+    /* About page */
+
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
+    /* Contact page */
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .con-details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        padding: 30px 10px;
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+    }
+
+    #form-details .my-self {
+        padding-left: 80px;
+        margin-top: 10px;
+    }
+
+    /* Cart page */
+    #cart-add{
+        flex-direction: column;
+    }
+    #coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
