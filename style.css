@@ -507,7 +507,7 @@ footer .follow {
     margin-top: 20px;
 }
 
-footer .follow i {
+footer .follow a {
     color: #465b52;
     padding-right: 4px;
     cursor: pointer;
